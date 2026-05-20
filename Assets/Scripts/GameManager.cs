@@ -17,6 +17,9 @@ public class GameManager : MonoBehaviour
     {
         Instance = this;
         UpdateUI();
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     public void LightShrine()
